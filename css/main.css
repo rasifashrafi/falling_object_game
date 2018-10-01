@@ -1,8 +1,13 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
 .game {
-    background: url(../images/background.jpg) no-repeat;
+    background: linear-gradient(27deg,rgb(105, 55, 55),rgb(36, 1, 124),rgb(62, 5, 119),rgb(106, 150, 221),rgb(157, 186, 232));
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;
+    width: 90vw;
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -12,10 +17,11 @@
     font-size: 500px;
     z-index: 20;
     font-family: arial;
-    color: #ff100257;
+    color: rgb(135, 135, 228);
     user-select: none;
     width: 100%;
     text-align: center;
+    
    }
    
    .box {
@@ -33,6 +39,7 @@
    }
    
    .counter {
+       margin-top:6vh;
     border: 3px solid red;
     border-radius: 20%;
     background-color: #ff6969ba;
@@ -46,3 +53,43 @@
     position: relative;
     z-index: 1;
    }
+   .submit{
+      
+       top: 0;
+       right: 0;
+       left: 0;
+       bottom: 0;
+       margin: auto;
+   }
+   .submit button:hover{
+       color: red;
+   }
+   .submit input:hover{
+       background: yellow;
+   }
+   .scoreboard{
+       height: 100vh;
+       width: 10vw;
+       color: white;
+       background: linear-gradient(82deg, #693737, #24017c, #3e0577, #6a96dd);
+background-size: 800% 800%;
+
+-webkit-animation: AnimationName 1s ease infinite;
+-moz-animation: AnimationName 1s ease infinite;
+animation: AnimationName 1s ease infinite;
+   }
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

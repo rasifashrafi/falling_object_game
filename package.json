@@ -1,0 +1,23 @@
+{
+  "name": "falling_object",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "reload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rasifashrafi/falling_object_game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rasifashrafi/falling_object_game/issues"
+  },
+  "homepage": "https://github.com/rasifashrafi/falling_object_game#readme",
+  "dependencies": {
+    "reload": "^2.3.1"
+  }
+}

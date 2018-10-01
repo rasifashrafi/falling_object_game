@@ -10,10 +10,32 @@
 <body>
   <div class="game">
     <div class="counter" id= "counter">00s</div>
+    <div class="submit">
+      <input class="submit_i" type="text"><button class="submit_btn">Submit</button>
+    </div>
     <div class="score">
       00
     </div>
   </div>
+  <div class="scoreboard">
+    <p>
+      <h1>SCORE</h1>
+      <ol class="scoring"></ol>
+    </p>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCPovj_oZIw6LiTukoUJ2tS3av1B7u1Q54",
+    authDomain: "scrool-down-game.firebaseapp.com",
+    databaseURL: "https://scrool-down-game.firebaseio.com",
+    projectId: "scrool-down-game",
+    storageBucket: "scrool-down-game.appspot.com",
+    messagingSenderId: "31801451547"
+  };
+  firebase.initializeApp(config);
+</script>
   <script src="./js/jquerry.js"></script>
   <script src="./js/main.js"></script>
 </body>
